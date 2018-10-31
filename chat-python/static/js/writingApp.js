@@ -32,6 +32,26 @@ const chatBody = chatWindow.find('.chat-window')
 // Register helpers
 // -----------------------------------------------------
 
+let helpers = {
+
+    // ------------------------------------------------
+    // Toggles the display of the chat window
+    // ------------------------------------------------
+
+    ToggleChatWindow: function () {
+        chatWindow.toggleClass('opened')
+        chatHeader.find('.title').text(
+            chatWindow.hasClass('opened') ? 'Minimize Chat Window' : 'Chat with Support'
+        )
+    },
+
+    // -------------------------------------------------------------------
+    // Show the appropriate display screen. Login screen or Chat screen
+    // -------------------------------------------------------------------
+
+    
+}
+
 
 
 })
